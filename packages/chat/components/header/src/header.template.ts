@@ -42,7 +42,11 @@ export function headerTemplate(customElementClass) {
     disableFullscreen,
     disableClose,
     disableMinimize,
+    menuItems,
   } = customElementClass;
+
+  console.log('menuItems in header', menuItems);
+
   return html` <div class="${clabsPrefix}--chat-header-container">
     <div class="${clabsPrefix}--chat-header-content">
       <div class="${clabsPrefix}--chat-header-elements">

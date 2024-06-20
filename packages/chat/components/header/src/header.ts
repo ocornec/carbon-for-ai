@@ -59,6 +59,9 @@ export default class header extends LitElement {
   @state()
   enableDocking = false;
 
+  @property({ type: Object, attribute: 'menuItems' })
+  menuItems;
+
   /**
    * disable header hamburger menu
    */

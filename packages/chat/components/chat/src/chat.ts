@@ -31,6 +31,9 @@ export default class CLABSChat extends LitElement {
    */
   private _eventNumber = 0;
 
+  @property({ type: Object, attribute: 'headerMenuItems' })
+  headerMenuItems;
+
   /**
    * session ID to ensure no two conversations collide within the server
    */

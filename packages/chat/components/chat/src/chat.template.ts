@@ -49,6 +49,7 @@ export function chatTemplate(customElementClass) {
     _streamDelay: streamDelay,
     promptNotificationType,
     promptNotificationMessage,
+    headerMenuItems,
   } = customElementClass;
 
   return html`<div
@@ -59,6 +60,7 @@ export function chatTemplate(customElementClass) {
       : ''} ${enableFullscreen ? clabsPrefix + '--chat-fullscreen' : ''}">
     <div class="${clabsPrefix}--chat-content-container">
       <clabs-chat-header
+        .menuItems="${headerMenuItems}"
         @on-chat-fullscreen-change="${handleFullscreenMode}"
         @on-chat-docking-change="${handleDockingMode}"
         @on-chat-closed="${handleChatClosed}"

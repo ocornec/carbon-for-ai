@@ -131,6 +131,7 @@ export const APIPlayground = {
     <div style="height:calc(100vh - 84px);">
       <clabs-chat
         model="llama-2"
+        .headerMenuItems="${[{ hello: 'hello' }]}"
         auto-update
         user-prompt="${userPrompt}"
         api-url="${apiUrl}"
